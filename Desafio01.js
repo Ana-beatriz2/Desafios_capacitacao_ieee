@@ -12,7 +12,7 @@ function pegaNomes(){
     let nomePessoas = pessoas.map(pessoa => (pessoa.nome))
 
     let nomes = nomePessoas.filter(nomePessoas => {
-        if (nomePessoas[0] === 'L'){
+        if (nomePessoas[0] === 'A'){
             return true
         }
     })
