@@ -8,15 +8,19 @@ let pessoas = [
     {nome: "Amélia", idade: 5}
 ]
 
-let nomePessoas = pessoas.map(pessoas => (pessoas.nome))
+function pegaNomes(){
+    let nomePessoas = pessoas.map(pessoa => (pessoa.nome))
 
-let nomes = nomePessoas.filter(nomePessoas => {
-    if (nomePessoas[0] === 'A'){
-        return true
-    }
-})
+    let nomes = nomePessoas.filter(nomePessoas => {
+        if (nomePessoas[0] === 'L'){
+            return true
+        }
+    })
 
-const tamanho = nomes.length
+    return nomes
+}
+
+const tamanho = pegaNomes().length
 
 function pegaMedia(){
     let media
@@ -25,17 +29,15 @@ function pegaMedia(){
 
     pessoas.forEach(pessoas => {
 
-        if (pessoas.nome === nomes[indice]){
+        if (pessoas.nome === pegaNomes()[indice]){
             soma += pessoas.idade
             indice++
         }
-            
     })
 
     media = soma / tamanho
     return media.toFixed(0)
 }
 
-
-console.log(nomes)
+console.log(pegaNomes())
 console.log(`Média de idade: ${pegaMedia()}`)
