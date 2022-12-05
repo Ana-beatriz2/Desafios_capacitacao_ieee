@@ -19,7 +19,7 @@ let filtroNome = pessoas.filter(pessoas => {
     }
 })
 
-let nomesFinal = filtroNome.map(pessoa => pessoa.nome)
+let nomesFinal = filtroNome.map(filtroNome => filtroNome.nome)
 
 media = soma / nomesFinal.length
 
