@@ -2,6 +2,7 @@ let pessoas = [
     {nome: "Larissa", idade: 43},
     {nome: "Everton", idade: 2},
     {nome: "Lana", idade: 12},
+    {nome: "Anderson", idade: 85},
     {nome: "Leonardo", idade: 32},
     {nome: "Michael", idade: 19},
     {nome: "Amanda", idade: 32},
